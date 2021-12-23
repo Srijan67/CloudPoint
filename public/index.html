@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="main">
+        <form class="temp_form">
+          <input
+            type="text"
+            name="cityName"
+            id="cityName"
+            placeholder="Enter you city name.."
+            autocomplete="off"
+          />
+          <input id="submitBtn" type="submit" value="Search" />
+          <!-- <p class="temp_error"></p> -->
+        </form>
+      </div>
+      <div class="output">
+        <div class="date">
+          <p class="today_day"></p>
+          <p class="today_date"></p>
+        </div>
+
+        <p class="city_given">Get Your Output..</p>
+        <div class="temp_info">
+          <div class="cur_temp">
+            <span class="temp_val"></span><sup>o</sup>C
+          </div>
+          <div class="weatherIcon"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/date.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+/* variables */
+:root {
+  --main-color: rgb(12, 0, 122);
+}
+body {
+  background-color: var(--main-color);
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 7%;
+}
+.temp_form {
+  /* background-color: rgb(0, 25, 250); */
+  /* padding: 1rem; */
+  min-width: fit-content;
+  position: relative;
+  margin-bottom: 3rem;
+  border-radius: 2rem;
+  /* filter: drop-shadow(1px 5px 5px grey); */
+  animation-name: shadow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes shadow {
+  0% {
+    filter: drop-shadow(1px 7px 5px grey);
+  }
+  50% {
+    filter: drop-shadow(-1px -7px 5px grey);
+  }
+  100% {
+    filter: drop-shadow(1px 7px 5px grey);
+  }
+}
+#cityName {
+  padding: 10px;
+  border: black;
+  border-radius: 22px;
+  min-width: 30vw;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#submitBtn,
+#submitBtn:focus {
+  position: absolute;
+  border: none;
+  background-color: rgb(12, 0, 122);
+  color: white;
+  padding: 7px;
+  border-radius: 20px;
+  right: 0.3rem;
+  top: 0.3rem;
+  letter-spacing: 1px;
+  /* font-weight: 300; */
+}
+#submitBtn:hover {
+  background-color: rgb(0, 195, 255);
+  transition: 0.35s all;
+}
+::placeholder {
+  color: rgb(168, 164, 164);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+/*Output*/
+.output {
+  background-color: grey;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  min-height: 30vh;
+  letter-spacing: 1.2px;
+  /* animation-name: shadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; */
+  /* min-width: 250px; */
+}
+.date {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  background-color: rgb(59, 59, 59);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.today_day {
+  border-right: 1px solid white;
+  padding-right: 2.5rem;
+}
+.today_date {
+  padding-left: 2rem;
+}
+.city_given {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.temp_info {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  /* font-size: 2rem; */
+  font-weight: 700;
+}
+.cur_temp {
+  font-size: 2.5rem;
+}
+.weatherIcon {
+  font-size: 3rem;
+}
