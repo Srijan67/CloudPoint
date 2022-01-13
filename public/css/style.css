@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  font-family: "Roboto", sans-serif;
 }
 /* variables */
 :root {
   --main-color: rgb(12, 0, 122);
 }
 body {
+  font-family: "Roboto", sans-serif;
+
   background-color: var(--main-color);
   color: white;
 }
@@ -46,6 +47,7 @@ body {
   }
 }
 #cityName {
+  background-color: rgb(71, 71, 71);
   padding: 10px;
   border: black;
   border-radius: 22px;
@@ -53,6 +55,7 @@ body {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1px;
+  color: rgb(211, 211, 211);
 }
 #submitBtn,
 #submitBtn:focus {
@@ -110,11 +113,13 @@ body {
 .city_given {
   text-align: center;
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
   letter-spacing: 1px;
 }
 .temp_info {
+  /* font-family: "Krub", sans-serif; */
+
   margin-top: 1rem;
   display: flex;
   justify-content: space-evenly;
